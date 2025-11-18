@@ -124,7 +124,6 @@ def doit(pf, xmin, xmax, nuc_thresh):
     ax_X.xaxis.offsetText.set_fontsize(16)
     ax_X.yaxis.offsetText.set_fontsize(16)
 
-
     if xmax > 0:
         ax_T.set_xlim(xmin, xmax)
         ax_e.set_xlim(xmin, xmax)
@@ -154,7 +153,6 @@ def doit(pf, xmin, xmax, nuc_thresh):
     prefix = os.getcwd().split("/")[-1]
     time_str = f"{time:05.3f}s"
     f.savefig(f"snapshot_{prefix}_{pf}_{time_str}.png")
-
 
 
 if __name__ == "__main__":
